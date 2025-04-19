@@ -1,7 +1,7 @@
  .u-section-1 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-size: cover;
 }
 
@@ -260,7 +260,7 @@
 } .u-section-2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-size: cover;
 }
 
@@ -310,7 +310,7 @@
 } .u-section-3 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-size: cover;
   min-height: 520px;
 }
@@ -437,7 +437,7 @@
 } .u-section-4 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-size: cover;
 }
 

@@ -44981,7 +44981,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*end-variables sitestylecss*/
  .u-header {
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45037,7 +45037,7 @@ a.u-link.u-text-hover-grey-90:hover {
  .u-footer {
   background-position: 0px 0px;
   background-repeat: repeat;
-  background-image: url("/images/background-letterclub-web.jpg");
+  background-image: url("images/background-letterclub-web.jpg");
   background-size: auto;
 }
 
