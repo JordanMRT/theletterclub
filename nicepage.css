@@ -45144,6 +45144,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-2 {
   font-family: AktivGrotesk-Regular;
   font-weight: 600;
+  font-size: 1.125rem;
   margin: 14px auto 60px;
 }
 @media (max-width: 1199px) {
@@ -45221,6 +45222,10 @@ a.u-link.u-text-hover-grey-90:hover {
     grid-auto-columns: calc(100% - 0px);
     grid-template-columns: 100%;
   }
+
+  .u-footer .u-text-2 {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
@@ -45264,9 +45269,10 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-2 {
     width: auto;
+    font-size: 0.75rem;
     margin-top: 29px;
-    margin-left: 17px;
-    margin-right: 17px;
+    margin-left: 26px;
+    margin-right: 26px;
   }
 }
 

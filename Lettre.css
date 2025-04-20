@@ -67,17 +67,22 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 48px;
+    min-height: 102px;
   }
 
   .u-section-1 .u-text-1 {
-    margin-left: 400px;
+    font-size: 1.9rem;
+    margin-top: 0;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 
   .u-section-1 .u-image-1 {
-    width: 340px;
-    height: 164px;
-    margin-left: 400px;
+    width: 233px;
+    height: 102px;
+    margin-top: -76px;
+    margin-bottom: -34px;
+    margin-left: -50px;
   }
 } .u-section-2 {
   background-position: 50% 50%;
@@ -223,10 +228,6 @@
     min-height: 422px;
   }
 
-  .u-section-2 .u-layout-wrap-1 {
-    position: relative;
-  }
-
   .u-section-2 .u-layout-cell-1 {
     min-height: 100px;
   }
@@ -237,6 +238,11 @@
 
   .u-section-2 .u-form-1 {
     width: 300px;
+  }
+
+  .u-section-2 .u-image-1 {
+    margin-top: 20px;
+    margin-bottom: initial;
   }
 }
 
@@ -258,11 +264,48 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .u-section-2 .u-image-1 {
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 575px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 508px;
+    min-height: 773px;
+  }
+
+  .u-section-2 .u-layout-wrap-1 {
+    margin-top: 1px;
+  }
+
+  .u-section-2 .u-label-1 {
+    font-size: 1rem;
+  }
+
+  .u-section-2 .u-input-1 {
+    font-size: 0.9rem;
+  }
+
+  .u-section-2 .u-label-2 {
+    font-size: 1rem;
+  }
+
+  .u-section-2 .u-input-2 {
+    font-size: 0.9rem;
+  }
+
+  .u-section-2 .u-label-3 {
+    font-size: 1rem;
+  }
+
+  .u-section-2 .u-input-3 {
+    font-size: 0.9rem;
+  }
+
+  .u-section-2 .u-image-1 {
+    margin-top: 23px;
+    margin-bottom: 1px;
   }
 }@font-face {
   font-family: 'AktivGrotesk-Regular';
