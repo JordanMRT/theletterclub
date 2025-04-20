@@ -1,13 +1,7 @@
- body {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url("/images/background_letterclub.png");
-}
- 
  .u-section-1 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background_letterclub.png");
+  background-image: url("images/background-letterclub-web.png");
   background-size: cover;
 }
 
@@ -96,13 +90,30 @@
   }
 
   .u-section-1 .u-layout-cell-1 {
-    min-height: 435px;
+    min-height: 604px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .u-section-1 .u-text-1 {
-    margin-right: 0;
-    margin-left: 0;
     font-size: 4.166666666666667rem;
+    margin-top: 1px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-top: 19px;
   }
 
   .u-section-1 .u-layout-cell-2 {
@@ -110,18 +121,20 @@
   }
 
   .u-section-1 .u-image-2 {
-    width: 454px;
-    height: 319px;
-    margin-right: 0;
+    width: 477px;
+    height: 335px;
+    margin-top: 72px;
+    margin-right: -52px;
   }
 
   .u-section-1 .u-rotation-parent-1 {
-    margin-top: -476px;
+    margin-top: -394px;
+    margin-left: -35px;
   }
 
   .u-section-1 .u-btn-1 {
-    margin-top: 20px;
-    margin-right: 0;
+    margin-top: 284px;
+    margin-right: auto;
   }
 }
 
@@ -144,10 +157,7 @@
   }
 
   .u-section-1 .u-text-2 {
-    width: auto;
     margin-top: 8px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .u-section-1 .u-image-1 {
@@ -179,10 +189,6 @@
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 760px;
-  }
-
-  .u-section-1 .u-layout-wrap-1 {
-    position: relative;
   }
 
   .u-section-1 .u-layout-cell-1 {
@@ -266,7 +272,7 @@
 } .u-section-2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background_letterclub.png");
+  background-image: url("images/background-letterclub-web.png");
   background-size: cover;
 }
 
@@ -282,7 +288,12 @@
 
 @media (max-width: 1199px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 400px;
+    min-height: 157px;
+  }
+
+  .u-section-2 .u-text-1 {
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
 }
 
@@ -316,7 +327,7 @@
 } .u-section-3 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background_letterclub.png");
+  background-image: url("images/background-letterclub-web.png");
   background-size: cover;
   min-height: 520px;
 }
@@ -344,7 +355,8 @@
 
 .u-section-3 .u-image-1 {
   min-height: 520px;
-  background-image: url("/images/photo-1498075702571-ecb018f3752d.jpeg");
+  background-image: url("images/photo-1498075702571-ecb018f3752d.jpeg");
+  background-position: 50% 50%;
 }
 
 .u-section-3 .u-container-layout-2 {
@@ -362,6 +374,14 @@
 
   .u-section-3 .u-layout-cell-1 {
     min-height: 429px;
+  }
+
+  .u-section-3 .u-text-1 {
+    width: auto;
+    font-weight: 500;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-3 .u-image-1 {
@@ -430,20 +450,13 @@
     min-height: 194px;
   }
 
-  .u-section-3 .u-text-1 {
-    width: auto;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .u-section-3 .u-image-1 {
     min-height: 295px;
   }
 } .u-section-4 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/images/background_letterclub.png");
+  background-image: url("images/background-letterclub-web.png");
   background-size: cover;
 }
 
@@ -507,10 +520,25 @@
   }
 
   .u-section-4 .u-layout-cell-1 {
-    min-height: 330px;
+    min-height: 496px;
+  }
+
+  .u-section-4 .u-image-1 {
+    width: 195px;
+    height: 140px;
+    margin-top: 11px;
+    margin-left: 11px;
+  }
+
+  .u-section-4 .u-text-1 {
+    width: auto;
+    margin-top: 11px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-4 .u-btn-1 {
+    margin-top: 11px;
     margin-left: 0;
   }
 
@@ -602,10 +630,10 @@
   font-family: 'AktivGrotesk-Bold';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/AktivGrotesk-Bold.woff2);
+  src: url(fonts/AktivGrotesk-Bold.otf);
 }@font-face {
   font-family: 'AktivGrotesk-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/AktivGrotesk-Regular.woff2);
+  src: url(fonts/AktivGrotesk-Regular.otf);
 }
