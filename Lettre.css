@@ -313,3 +313,13 @@
   font-weight: 400;
   src: url(fonts/AktivGrotesk-Regular.otf);
 }
+
+form button {
+  color: #ffffff !important;
+  background-color: #151a34 !important;
+  background-image: none;
+  font-family: AktivGrotesk-Regular;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 15px 50px;
+}
