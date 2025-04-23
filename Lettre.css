@@ -357,6 +357,15 @@ form div > input, form div > select {
   padding-left: 10px;
 }
 
+input[type="file"] {
+  display: inline-block;            /* Permet à l'input de ne pas étirer sa taille */
+  width: 100%;                      /* Prend toute la largeur du conteneur parent */
+  height: 50px;                     /* Ajuste la hauteur de l'input */
+  padding-left: 160px;               /* Espacement à gauche du texte */
+  padding-top: 6px;
+  position: relative;               /* Pour positionner l'élément button à l'intérieur */
+}
+
 input[type=file]::file-selector-button {
   color: #ffffff !important;
   background-color: #151a34 !important;
@@ -365,10 +374,23 @@ input[type=file]::file-selector-button {
   font-weight: 600;
   font-size: 0.7rem;
   padding: 8px 12px;
+  cursor: pointer;
+  position: absolute;              /* Positionner le bouton de manière absolue à l'intérieur */
+  top: 50%;                        /* Centrer verticalement */
+  left: 10px;                      /* Ajouter un peu d'espace à gauche */
+  transform: translateY(-50%);     /* Ajuster la position verticale pour un centrage parfait */
+  transition: background-color 0.3s ease;
+  border: none;
 }
 
-input[type=file]:focus {
-  background: #3B4678;
+/* Survol du bouton */
+input[type="file"]:hover::file-selector-button {
+  background-color: #3B4678 !important;  /* Change la couleur d'arrière-plan au survol */
+}
+
+/* Focus sur l'input file */
+input[type="file"]:focus::file-selector-button {
+  background-color: #3B4678 !important;  /* Garde une couleur d'arrière-plan lors du focus */
 }
 
 form div > textarea {
@@ -395,14 +417,17 @@ form div:last-child {
 }
 
 form button {
-  color: #ffffff !important;
-  background-color: #151a34 !important;
+  color: #ffffff;
+  background-color: #151a34;
   background-image: none;
   font-family: AktivGrotesk-Regular;
   font-weight: 600;
   font-size: 1.25rem;
   padding: 15px 50px;
   width: 80%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {

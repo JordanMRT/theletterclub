@@ -78,6 +78,7 @@
   font-weight: 500;
   margin: 288px 80px 0 auto;
   padding: 20px 67px 20px 65px;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 1199px) {
@@ -515,6 +516,7 @@
   font-weight: 500;
   margin: 18px auto 0 18px;
   padding: 20px 67px 20px 65px;
+  transition: background-color 0.3s ease;
 }
 
 .u-section-4 .u-layout-cell-2 {
