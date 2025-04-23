@@ -284,9 +284,12 @@
 }
 
 .u-section-2 .u-text-1 {
-  font-family: AktivGrotesk-Bold;
-  font-weight: 200;
-  margin: 43px auto 0;
+  font-family: AktivGrotesk-Regular;
+  font-size: 2.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #616ea8;
+  margin: 0px auto 0;
 }
 
 @media (max-width: 1199px) {
@@ -663,4 +666,10 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/AktivGrotesk-Regular.otf);
+}
+
+.copyright {
+  color: #616ea8;
+  font-size: 0.30rem;
+  text-align: center;
 }

@@ -481,3 +481,9 @@ form button:hover {
     height: 150px; /* Réduit la hauteur du textarea sur mobile */
   }
 }
+
+.copyright {
+  color: #616ea8;
+  font-size: 0.30rem;
+  text-align: center;
+}
