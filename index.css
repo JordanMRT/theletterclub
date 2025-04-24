@@ -548,8 +548,7 @@
   .u-section-4 .u-image-1 {
     width: 195px;
     height: 140px;
-    margin-top: 11px;
-    margin-left: 11px;
+    margin: auto;
   }
 
   .u-section-4 .u-text-1 {
@@ -633,8 +632,7 @@
   }
 
   .u-section-4 .u-image-1 {
-    margin-top: 0;
-    margin-left: 17px;
+    margin: auto;
   }
 
   .u-section-4 .u-text-1 {
