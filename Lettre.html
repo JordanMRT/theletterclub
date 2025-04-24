@@ -88,12 +88,23 @@
                         </div>
                         <div>
                           <label for="file-upload">Joindre un fichier</label>
-                          <input type="file" id="file" name="file-upload">
+                          <input type="file" id="file" name="file-upload" required>
                         </div>
                         <div>
                           <label for="message">Message (facultatif)</label>
-                          <textarea id="message" name="message" placeholder="Message" required></textarea>
+                          <textarea id="message" name="message" placeholder="Message"></textarea>
                         </div>
+                        <!-- Case à cocher pour autorisation -->
+                        <div class="checkbox-container">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                        J’autorise <italic>The Letter Club</italic> à partager des extraits anonymes de ma lettre dans la newsletter.
+                        </label>
+                        </div>
+                        <!-- Texte inspirant avant le bouton -->
+                        <p class="form-reminder">
+                        <em>💌 N'oublie pas : ce que tu écris n’a pas besoin d’être parfait.<br>Il a juste besoin d’exister.</em>
+                        </p>
                         <div>
                           <button type="submit">Envoyer</button>
                         </div>

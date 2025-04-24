@@ -487,3 +487,37 @@ form button:hover {
   font-size: 0.30rem;
   text-align: center;
 }
+
+/* Petit mot avant le bouton d'envoi */
+p.form-reminder {
+  margin-bottom: 1em;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Case à cocher pour accord */
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: -2.5em;
+}
+
+.checkbox-container input[type="checkbox"] {
+  height: 15px;
+  margin-right: 0.75em;
+  margin-top: 0.2em;
+  transform: scale(1.1);
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+}
+
+.checkbox-container label {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+  cursor: pointer;
+  padding-left: 20px;
+}
