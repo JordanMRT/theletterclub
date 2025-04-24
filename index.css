@@ -355,9 +355,9 @@
 
 .u-section-3 .u-text-1 {
   font-family: AktivGrotesk-Regular;
-  margin-bottom: 0;
-  margin-top: 197px;
-  font-size: 1.875rem;
+  margin-bottom: 15%;
+  margin-top: 10%;
+  font-size: 1.5rem;
   line-height: 1.1;
   font-weight: 400;
 }
@@ -502,15 +502,14 @@
 .u-section-4 .u-image-1 {
   width: 131px;
   height: 93px;
-  margin: 19px auto 0 46px;
+  margin: auto;
 }
 
 .u-section-4 .u-text-1 {
-  font-family: AktivGrotesk-Regular;
-  font-weight: 500;
-  font-size: 1.875rem;
+  font-family: AktivGrotesk-Bold;
+  font-size: 4rem;
+  margin: 0;
   line-height: 1.1;
-  margin: 19px auto 0 19px;
 }
 
 .u-section-4 .u-btn-1 {
@@ -674,4 +673,21 @@
   color: #616ea8;
   font-size: 0.30rem;
   text-align: center;
+}
+
+.u-footer .u-text-1 {
+  font-size: 1.5rem;
+  margin: 14px 2px 0 0;
+}
+
+.u-footer .u-list-1 {
+  width: 592px;
+  margin: 5% auto 0;
+}
+
+p.u-news-content {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 1.1;
 }

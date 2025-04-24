@@ -107,6 +107,7 @@
 
 .u-section-2 .u-container-layout-1 {
   padding: 30px;
+  font-size: 1.2rem;
 }
 
 .u-section-2 .u-text-1 {
@@ -257,7 +258,7 @@
   }
 
   .u-section-2 .u-text-1 {
-    font-size: 1.6666666666666665rem;
+    font-size: 1.1rem;
   }
 
   .u-section-2 .u-container-layout-2 {
@@ -488,6 +489,16 @@ form button:hover {
   text-align: center;
 }
 
+.u-footer .u-text-1 {
+  font-size: 1.5rem;
+  margin: 14px 2px 0 0;
+}
+
+.u-footer .u-list-1 {
+  width: 592px;
+  margin: 5% auto 0;
+}
+
 /* Petit mot avant le bouton d'envoi */
 p.form-reminder {
   margin-bottom: 1em;
@@ -520,4 +531,11 @@ p.form-reminder {
   line-height: 1.4;
   cursor: pointer;
   padding-left: 20px;
+}
+
+h2:not(.u-subtitle) {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: -7%;
 }
