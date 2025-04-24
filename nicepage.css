@@ -26812,7 +26812,7 @@ section.u-color-1:before,
 .u-container-layout.u-container-layout.u-color-1:before,
 .u-table-alt-color-1 tr:nth-child(even) {
   color: #ffffff;
-  background-color: #478ac9;
+  background-color: #eeeeee;
 }
 .u-input.u-color-1,
 .u-field-input.u-color-1,
@@ -45277,5 +45277,5 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
  /*begin-variables base-font-size*/ 
- html { font-size: 20px; }
+ html { font-size: 0.90rem; }
  /*end-variables base-font-size*/
