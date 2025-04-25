@@ -374,6 +374,7 @@ input[type=file]::file-selector-button {
   font-family: AktivGrotesk-Regular;
   font-weight: 600;
   font-size: 0.7rem;
+  border-radius: 4px;
   padding: 8px 12px;
   cursor: pointer;
   position: absolute;              /* Positionner le bouton de manière absolue à l'intérieur */
@@ -424,6 +425,7 @@ form button {
   font-family: AktivGrotesk-Regular;
   font-weight: 600;
   font-size: 1.25rem;
+  border-radius: 4px;
   padding: 15px 50px;
   width: 80%;
   border: none;

@@ -76,6 +76,7 @@
   font-family: AktivGrotesk-Regular;
   font-size: 1.25rem;
   font-weight: 500;
+  border-radius: 4px;
   margin: 288px 80px 0 auto;
   padding: 20px 67px 20px 65px;
   transition: background-color 0.3s ease;
