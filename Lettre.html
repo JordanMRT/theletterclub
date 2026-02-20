@@ -1,171 +1,762 @@
 <!DOCTYPE html>
-<html style="font-size: 0.90rem;" lang="fr"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Envoyer une lettre">
-    <meta name="description" content="">
-    <title>Envoyer une lettre</title>
-    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-    <link rel="stylesheet" href="Lettre.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 7.7.3, nicepage.com">
-    <meta name="referrer" content="origin">
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "images/The-Letter-Club_Logo.png"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Lettre">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="fr"><header class="u-clearfix u-header u-image u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
-        <a href="./" data-page-id="459405052" class="u-align-center u-image u-logo u-image-1" data-image-width="1324" data-image-height="146" title="Accueil">
-          <img src="images/The-Letter-Club_Logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        <nav class="u-align-left u-menu u-menu-one-level u-offcanvas u-menu-1">
-          <div class="menu-collapse u-custom-font" style="font-size: 1rem; letter-spacing: 0px; font-family: AktivGrotesk-Regular;">
-            <a class="u-button-style u-custom-effect-duration u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-custom-font u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-palette-1-light-1" href="Lettre.html" style="padding: 10px 0px; transition-duration: 0.5s;">Envoyer une lettre</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Lettre.html">Envoyer une lettre</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-    <section class="u-clearfix u-image u-section-1" id="block-2">
-      <div class="u-clearfix u-sheet u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xl u-valign-middle-xs u-sheet-1">
-        <h1 class="u-custom-font u-text u-text-custom-color-1 u-text-default u-text-1">Envoyer une lettre</h1>
-        <img class="u-image u-image-contain u-image-default u-image-1" src="images/scribble-circle-letterclub-web.png" alt="" data-image-width="1280" data-image-height="705">
+<html lang="fr" data-theme="dark">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Envoyer une lettre">
+  <meta name="description" content="">
+  <title>Envoyer une lettre — The Letter Club</title>
+  <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "logo": "images/The-Letter-Club_Logo.png"
+  }</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Envoyer une lettre">
+  <meta property="og:type" content="website">
+
+<style>
+/* ============================================================
+   DESIGN TOKENS — identiques à l'accueil
+   ============================================================ */
+:root {
+  --sage: #9CAF9C;
+  --aged-paper: #F3EDE2;
+  --coffee: #6B4F3A;
+  --dark-sage: #3F4F44;
+
+  --bg:          #1E1D17;
+  --bg-grad-1:   rgba(63,79,68,0.3);
+  --bg-grad-2:   rgba(107,79,58,0.2);
+  --text:        #F3EDE2;
+  --text-muted:  rgba(243,237,226,0.55);
+  --text-sub:    rgba(243,237,226,0.38);
+  --heading:     #F3EDE2;
+  --surface:     rgba(255,255,255,0.04);
+  --surface-hov: rgba(255,255,255,0.07);
+  --border:      rgba(156,175,156,0.18);
+  --accent:      var(--sage);
+  --btn-bg:      var(--dark-sage);
+  --btn-text:    #F3EDE2;
+  --btn-hov:     #4e6356;
+  --nav-link:    rgba(156,175,156,0.7);
+  --nav-hov:     #F3EDE2;
+  --footer-bg:   #161510;
+
+  /* Form-specific */
+  --input-bg:      rgba(255,255,255,0.05);
+  --input-border:  rgba(156,175,156,0.25);
+  --input-focus:   var(--sage);
+  --label-color:   rgba(243,237,226,0.65);
+  --placeholder:   rgba(243,237,226,0.28);
+}
+
+[data-theme="light"] {
+  --bg:          #F3EDE2;
+  --bg-grad-1:   rgba(156,175,156,0.18);
+  --bg-grad-2:   rgba(107,79,58,0.08);
+  --text:        #3A2E24;
+  --text-muted:  rgba(58,46,36,0.65);
+  --text-sub:    rgba(58,46,36,0.42);
+  --heading:     #3A2E24;
+  --surface:     rgba(0,0,0,0.03);
+  --surface-hov: rgba(0,0,0,0.06);
+  --border:      rgba(107,79,58,0.18);
+  --accent:      var(--dark-sage);
+  --btn-bg:      var(--coffee);
+  --btn-text:    #F3EDE2;
+  --btn-hov:     #7d5c42;
+  --nav-link:    rgba(63,79,68,0.7);
+  --nav-hov:     var(--coffee);
+  --footer-bg:   #E8DFCF;
+
+  --input-bg:      rgba(0,0,0,0.03);
+  --input-border:  rgba(107,79,58,0.25);
+  --input-focus:   var(--dark-sage);
+  --label-color:   rgba(58,46,36,0.65);
+  --placeholder:   rgba(58,46,36,0.35);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 0.90rem; scroll-behavior: smooth; }
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Grain overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a   { color: inherit; text-decoration: none; }
+
+/* ============================================================
+   THEME TOGGLE
+   ============================================================ */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 600;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 6px 14px;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 2px;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+  background: var(--surface-hov);
+  border-color: var(--accent);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  transition: background 0.4s, border-color 0.4s;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo-link img {
+  height: 38px;
+  width: auto;
+}
+
+/* Logo switching */
+[data-theme="dark"]  .logo-light { display: none; }
+[data-theme="dark"]  .logo-dark  { display: block; }
+[data-theme="light"] .logo-dark  { display: none; }
+[data-theme="light"] .logo-light { display: block; }
+
+.site-nav a {
+  color: var(--nav-link);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  padding: 4px 0;
+}
+
+.site-nav a:hover { color: var(--nav-hov); }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+/* Mobile nav drawer */
+.mobile-nav { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.7); backdrop-filter: blur(6px); }
+.mobile-nav.open { display: flex; }
+
+.mobile-nav-inner {
+  margin-left: auto;
+  width: min(280px, 80vw);
+  height: 100%;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px;
+  gap: 28px;
+  animation: slide-in 0.3s ease;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+.mobile-nav-inner a {
+  color: var(--nav-link);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.mobile-nav-inner a:hover { color: var(--nav-hov); }
+
+.mobile-nav-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   SECTION 1 — Hero / titre
+   ============================================================ */
+#block-2 {
+  min-height: 36vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 56px 24px 48px;
+  background:
+    radial-gradient(ellipse at 20% 60%, var(--bg-grad-1) 0%, transparent 55%),
+    var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.4s, border-color 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#block-2 h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-weight: 600;
+  color: var(--heading);
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+  transition: color 0.4s;
+}
+
+.scribble-circle {
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  width: clamp(200px, 35vw, 420px);
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="light"] .scribble-circle { opacity: 0.12; }
+
+/* ============================================================
+   SECTION 2 — Contenu principal (texte + formulaire)
+   ============================================================ */
+#block-1 {
+  padding: 72px 24px 80px;
+  background:
+    radial-gradient(ellipse at 80% 30%, var(--bg-grad-2) 0%, transparent 55%),
+    var(--bg);
+  transition: background 0.4s;
+}
+
+.content-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Left — intro text */
+.intro-text h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--heading);
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+  transition: color 0.4s;
+}
+
+.intro-text p {
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  line-height: 1.9;
+  color: var(--text-muted);
+  transition: color 0.4s;
+}
+
+.intro-text p em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Separator image */
+.dots-separator {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  opacity: 0.35;
+  transition: opacity 0.4s;
+}
+
+[data-theme="light"] .dots-separator { opacity: 0.25; }
+
+/* ============================================================
+   FORM
+   ============================================================ */
+.contactez-nous {
+  width: 100%;
+}
+
+.contactez-nous form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactez-nous label {
+  display: block;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--label-color);
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+  transition: color 0.4s;
+}
+
+.contactez-nous input[type="text"],
+.contactez-nous input[type="email"],
+.contactez-nous input[type="file"],
+.contactez-nous textarea {
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 2px;
+  color: var(--text);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  padding: 11px 14px;
+  transition: border-color 0.3s, background 0.3s, color 0.4s;
+  outline: none;
+  appearance: none;
+}
+
+.contactez-nous input[type="text"]::placeholder,
+.contactez-nous input[type="email"]::placeholder,
+.contactez-nous textarea::placeholder {
+  color: var(--placeholder);
+}
+
+.contactez-nous input:focus,
+.contactez-nous textarea:focus {
+  border-color: var(--input-focus);
+}
+
+.contactez-nous input[type="file"] {
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.contactez-nous input[type="file"]::file-selector-button {
+  background: var(--surface);
+  border: 1px solid var(--input-border);
+  border-radius: 2px;
+  color: var(--accent);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.88rem;
+  padding: 5px 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.contactez-nous input[type="file"]::file-selector-button:hover {
+  background: var(--surface-hov);
+  border-color: var(--accent);
+}
+
+.contactez-nous textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  margin-top: 2px;
+  accent-color: var(--btn-bg);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.checkbox-container label {
+  margin-bottom: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.checkbox-container label italic { font-style: italic; }
+
+/* Form reminder */
+.form-reminder {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.96rem;
+  color: var(--text-sub);
+  line-height: 1.7;
+  text-align: center;
+  padding: 4px 0;
+  transition: color 0.4s;
+}
+
+/* Submit button */
+.contactez-nous button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contactez-nous button[type="submit"]:hover {
+  background: var(--btn-hov);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border);
+  padding: 56px 24px 36px;
+  transition: background 0.4s, border-color 0.4s;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-logo img {
+  height: 34px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-muted);
+  max-width: 480px;
+  transition: color 0.4s;
+}
+
+.footer-text em { color: var(--accent); font-style: italic; }
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.footer-links a {
+  color: var(--nav-link);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--nav-hov); }
+
+.footer-copy {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-sub);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  transition: color 0.4s, border-color 0.4s;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 860px) {
+  .content-grid   { grid-template-columns: 1fr; gap: 48px; }
+  .footer-inner   { grid-template-columns: 1fr; }
+  .footer-links   { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 16px 24px; }
+  .site-nav       { display: none; }
+  .hamburger      { display: flex; }
+  .scribble-circle { width: clamp(140px, 40vw, 260px); }
+}
+
+@media (max-width: 540px) {
+  #block-2        { padding: 40px 18px 36px; min-height: 28vh; }
+  #block-1        { padding: 48px 18px 56px; }
+  .header-inner   { padding: 0 18px; }
+  .logo-link img  { height: 30px; }
+  .footer-links   { flex-direction: column; gap: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Theme toggle -->
+<button id="theme-toggle" aria-label="Changer de thème">☀ Jour</button>
+
+<!-- HEADER -->
+<header class="site-header u-clearfix u-header u-image u-header" id="header">
+  <div class="header-inner u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
+    <a href="./" class="logo-link u-align-center u-image u-logo u-image-1" data-page-id="459405052" title="Accueil">
+      <img class="logo-light u-logo-image u-logo-image-1" src="images/The-Letter-Club_Logo.png" alt="The Letter Club">
+      <img class="logo-dark  u-logo-image u-logo-image-1" src="images/The-Letter-Club_Logo_darktheme.png" alt="The Letter Club">
+    </a>
+    <nav class="site-nav u-align-left u-menu u-menu-one-level u-offcanvas u-menu-1">
+      <a href="Lettre.html" class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-palette-1-light-1">Envoyer une lettre</a>
+    </nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-inner">
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+    <a href="Lettre.html" onclick="closeMobileNav()">Envoyer une lettre</a>
+  </div>
+</div>
+
+<!-- ── SECTION 1 — Titre ─────────────────────────────── -->
+<section class="u-clearfix u-image u-section-1" id="block-2">
+  <div class="hero-inner u-clearfix u-sheet u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xl u-valign-middle-xs u-sheet-1">
+    <h1 class="u-custom-font u-text u-text-custom-color-1 u-text-default u-text-1">Envoyer une lettre</h1>
+  </div>
+  <img class="scribble-circle u-image u-image-contain u-image-default u-image-1"
+       src="images/scribble-circle-letterclub-web.png" alt=""
+       data-image-width="1280" data-image-height="705">
+</section>
+
+<!-- ── SECTION 2 — Texte + Formulaire ───────────────── -->
+<section class="u-clearfix u-image u-section-2" id="block-1">
+  <div class="content-grid u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xs u-sheet-1">
+
+    <!-- Colonne gauche : texte d'intro -->
+    <div class="intro-text u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+      <div class="u-container-layout u-container-layout-1">
+        <p class="u-custom-font u-text u-text-default u-text-1">
+          <h2>✍️ <strong>Pour t'aider à te lancer</strong></h2><br>
+          <br>
+          Ici, tu peux déposer ce que tu veux. Une pensée, un souvenir, une rage douce ou une joie vive.<br><br>
+          Il n'est pas nécessaire d'écrire bien, il suffit d'écrire vrai. Aucune attente de style, de tournures jolies ou de mots choisis. Écris comme tu parles, comme tu respires. Avec le cœur, avec les tripes, ou juste avec l'envie d'écrire.
+          <br><br>
+          Prend une feuille et un crayon (stylo, crayon à papier, feutre...), puis laisse-toi écrire. Une fois terminé, il ne te reste plus qu'à prendre en photo ou scanner ta lettre et à la déposer sur cette page.
+          <br><br>
+          Tu peux parler de toi, d'un moment, de quelqu'un, de tout ou de rien. Ta lettre peut être longue ou courte. Elle peut commencer sans "bonjour" et se finir sans "au revoir". Elle peut ressembler à un journal, à un cri muet ou à un murmure.
+          <br><br>
+          Ici, personne ne juge. Les lettres sont gardées précieusement.
+          Certaines lettres <em>- ou quelques phrases choisies -</em> pourront être partagées dans la newsletter, avec délicatesse.
+        </p>
       </div>
-    </section>
-    <section class="u-clearfix u-image u-section-2" id="block-1">
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xs u-sheet-1">
-        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <p class="u-custom-font u-text u-text-default u-text-1"><h2>✍️ <strong>Pour t'aider à te lancer</strong></h2><br>
-                    <br>
-                    Ici, tu peux déposer ce que tu veux. Une pensée, un souvenir, une rage douce ou une joie vive.<br><br>
-                    Il n’est pas nécessaire d’écrire bien, il suffit d’écrire vrai. Aucune attente de style, de tournures jolies ou de mots choisis. Écris comme tu parles, comme tu respires. Avec le cœur, avec les tripes, ou juste avec l’envie d’écrire.
-                    <br><br>
-                    Prend une feuille et un crayon (stylo, crayon à papier, feutre...), puis laisse-toi écrire. Une fois terminé, il ne te reste plus qu'à prendre en photo ou scanner ta lettre et à la déposer sur cette page.
-                    <br><br>
-                    Tu peux parler de toi, d’un moment, de quelqu’un, de tout ou de rien. Ta lettre peut être longue ou courte. Elle peut commencer sans “bonjour” et se finir sans “au revoir”. Elle peut ressembler à un journal, à un cri muet ou à un murmure.
-                    <br><br>
-                    Ici, personne ne juge. Les lettres sont gardées précieusement.
-                    Certaines lettres <em>- ou quelques phrases choisies -</em> pourront être partagées dans la newsletter, avec délicatesse.</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                  <div class="custom-expanded u-expanded-width-xl u-form u-form-1" id="carousel-4807">
-                    <!-- Formulaire Basin -->
-                    <div class="contactez-nous">
-                      <form action="https://usebasin.com/f/ebfd73c57257" method="POST" enctype="multipart/form-data" id="form" >
-                        <div>
-                          <label for="nom">Nom & prénom</label>
-                          <input type="text" id="nom" name="nom" placeholder="Prénom" required>
-                        </div>
-                        <div>
-                          <label for="email">Adresse e-mail</label>
-                          <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
-                        </div>
-                        <div>
-                          <label for="file-upload">Joindre un fichier</label>
-                          <input type="file" id="file" name="file-upload" required>
-                        </div>
-                        <div>
-                          <label for="message">Message (facultatif)</label>
-                          <textarea id="message" name="message" placeholder="Message"></textarea>
-                        </div>
-                        <!-- Case à cocher pour autorisation -->
-                        <div class="checkbox-container">
-                        <input type="checkbox" id="consent" name="consent" required>
-                        <label for="consent">
-                        J’autorise <italic>The Letter Club</italic> à partager des extraits anonymes de ma lettre dans la newsletter.
-                        </label>
-                        </div>
-                        <!-- Texte inspirant avant le bouton -->
-                        <p class="form-reminder">
-                        <em>💌 N'oublie pas : ce que tu écris n’a pas besoin d’être parfait.<br>Il a juste besoin d’exister.</em>
-                        </p>
-                        <div>
-                          <button type="submit">Envoyer</button>
-                        </div>
-                      </form>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/two_dots_separator-letterclub-web.png" alt="" data-image-width="2500" data-image-height="125">
-      </div>
-    </section>
-    
-    
-    
-    <footer class="u-align-center-sm u-align-center-xs u-clearfix u-footer u-image u-footer" id="footer"><div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
-      <a href="#" class="u-align-left u-image u-logo u-image-1" data-image-width="1324" data-image-height="146">
-        <img src="images/The-Letter-Club_Logo.png" class="u-logo-image u-logo-image-1">
-      </a>
-      <p class="u-align-left-xs u-custom-font u-text u-text-custom-color-1 u-text-default u-text-1">Ici, les mots voyagent autrement. Il y a des mots qu’on n’envoie jamais, et d’autres qui cherchent simplement un endroit pour exister.
-        Merci de les laisser vivre. Ici, les lettres ne s’effacent pas.
-        <br><br>
-        On se retrouve bientôt, au creux d’une lettre.
-        <br>
-        <em>- The Letter Club</em></p>
-      <div class="u-align-center u-expanded-width-xs u-list u-list-1">
-        <div class="u-align-center-md u-align-center-sm u-align-center-xs u-repeater u-repeater-1">
-          <div class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-container-layout-1">
-              <a href="https://www.tiktok.com/@jordanmrt_" class="u-active-none u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-left-xs u-border-none u-btn u-button-style u-custom-font u-custom-item u-hover-none u-none u-text-custom-color-1 u-btn-1" title="TikTok - Jordan Mrt" target="_blank">TikTok </a>
-            </div>
-          </div>
-          <div class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-container-layout-2">
-              <a href="https://www.instagram.com/jordan.mrt/" class="u-active-none u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-left-xs u-border-none u-btn u-button-style u-custom-font u-custom-item u-hover-none u-none u-text-custom-color-1 u-btn-2" title="Instagram - Jordan Mrt">Instagram </a>
-            </div>
-          </div>
-          <div class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-container-layout-3">
-              <a href="Lettre.html" data-page-id="716024259" class="u-active-none u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-left-xs u-border-none u-btn u-button-style u-custom-font u-custom-item u-hover-none u-none u-text-custom-color-1 u-btn-3" title="Envoyer une lettre">Envoyer une lettre </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright"><p>
-        © <span id="year"></span> The Letter Club · Tous droits réservés
-      </p>
-      <p>
-        Un projet imaginé avec douceur, pour faire vivre les lettres autrement.
-        <br>Par Jordan Mrt - ImHappyToBeYourFriend</p>
     </div>
-  </footer> 
-</body></html>
+
+    <!-- Colonne droite : formulaire -->
+    <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+      <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
+        <div class="custom-expanded u-expanded-width-xl u-form u-form-1" id="carousel-4807">
+          <div class="contactez-nous">
+            <form action="https://usebasin.com/f/ebfd73c57257" method="POST" enctype="multipart/form-data" id="form">
+              <div>
+                <label for="nom">Nom & prénom</label>
+                <input type="text" id="nom" name="nom" placeholder="Prénom" required>
+              </div>
+              <div>
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+              </div>
+              <div>
+                <label for="file-upload">Joindre un fichier</label>
+                <input type="file" id="file" name="file-upload" required>
+              </div>
+              <div>
+                <label for="message">Message (facultatif)</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">
+                  J'autorise <italic>The Letter Club</italic> à partager des extraits anonymes de ma lettre dans la newsletter.
+                </label>
+              </div>
+              <p class="form-reminder">
+                <em>💌 N'oublie pas : ce que tu écris n'a pas besoin d'être parfait.<br>Il a juste besoin d'exister.</em>
+              </p>
+              <div>
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Séparateur -->
+  <div class="dots-separator">
+    <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1"
+         src="images/two_dots_separator-letterclub-web.png" alt=""
+         data-image-width="2500" data-image-height="125">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer u-align-center-sm u-align-center-xs u-clearfix u-footer u-image u-footer" id="footer">
+  <div class="footer-inner u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+    <div class="footer-logo">
+      <a href="#" class="u-align-left u-image u-logo u-image-1" title="Accueil">
+        <img class="logo-light u-logo-image u-logo-image-1" src="images/The-Letter-Club_Logo.png" alt="The Letter Club">
+        <img class="logo-dark  u-logo-image u-logo-image-1" src="images/The-Letter-Club_Logo_darktheme.png" alt="The Letter Club">
+      </a>
+      <p class="footer-text u-align-left-xs u-custom-font u-text u-text-custom-color-1 u-text-default u-text-1">
+        Ici, les mots voyagent autrement. Il y a des mots qu'on n'envoie jamais, et d'autres qui cherchent simplement un endroit pour exister.
+        Merci de les laisser vivre. Ici, les lettres ne s'effacent pas.
+        <br><br>
+        On se retrouve bientôt, au creux d'une lettre.<br>
+        <em>- The Letter Club</em>
+      </p>
+    </div>
+    <nav class="footer-links u-align-center u-expanded-width-xs u-list u-list-1">
+      <a href="https://www.tiktok.com/@jordanmrt_" target="_blank" title="TikTok - Jordan Mrt">TikTok</a>
+      <a href="https://www.instagram.com/jordan.mrt/" title="Instagram - Jordan Mrt">Instagram</a>
+      <a href="Lettre.html" title="Envoyer une lettre">Envoyer une lettre</a>
+    </nav>
+  </div>
+  <div class="footer-copy u-align-center u-expanded-width-xs">
+    <p>© <span id="year"></span> The Letter Club · Tous droits réservés</p>
+    <p>Un projet imaginé avec douceur, pour faire vivre les lettres autrement.<br>Par Jordan Mrt - ImHappyToBeYourFriend</p>
+  </div>
+</footer>
+
+<script>
+// ── Theme — même logique que l'accueil ────────────────────────────────
+const html           = document.documentElement;
+const themeToggleBtn = document.getElementById('theme-toggle');
+const systemDark     = window.matchMedia('(prefers-color-scheme: dark)');
+let   userOverride   = false;
+
+function applyTheme(isDark) {
+  html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  themeToggleBtn.textContent = isDark ? '☀ Jour' : '☾ Nuit';
+}
+
+applyTheme(systemDark.matches);
+
+systemDark.addEventListener('change', e => {
+  if (!userOverride) applyTheme(e.matches);
+});
+
+themeToggleBtn.addEventListener('click', () => {
+  userOverride = true;
+  applyTheme(html.getAttribute('data-theme') !== 'dark');
+});
+
+// ── Mobile nav ─────────────────────────────────────────────────────────
+const hamburgerBtn   = document.getElementById('hamburger-btn');
+const mobileNav      = document.getElementById('mobile-nav');
+const mobileNavClose = document.getElementById('mobile-nav-close');
+
+hamburgerBtn.addEventListener('click',   () => mobileNav.classList.add('open'));
+mobileNavClose.addEventListener('click', closeMobileNav);
+mobileNav.addEventListener('click', e => { if (e.target === mobileNav) closeMobileNav(); });
+
+function closeMobileNav() { mobileNav.classList.remove('open'); }
+
+// ── Copyright year ─────────────────────────────────────────────────────
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
