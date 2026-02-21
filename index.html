@@ -1145,7 +1145,7 @@ button.primary {
   </section>
 
   <!-- ── SECTION 4 — Newsletter ─────────────────────── -->
-  <section class="section" id="block-4">
+<section class="section" id="block-4">
   <img class="scribble-newsletter" src="images/scribble-letterclub-web.png" alt="">
     <div class="section-inner">
       <div class="newsletter-col">
@@ -1164,11 +1164,12 @@ button.primary {
           </p>
         </div>
 
-        <!-- MailerLite embed (content preserved exactly) -->
+        <!-- MailerLite embed -->
         <div>
           <div id="mlb2-25212338" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-25212338">
             <div class="ml-form-align-center">
               <div class="ml-form-embedWrapper embedForm">
+
                 <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
                   <div class="ml-form-embedContent">
                     <h4>Rejoins la newsletter :</h4>
@@ -1187,44 +1188,41 @@ button.primary {
                               <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
                             </div>
                           </div>
-                        </div>
+                        </div><!-- /ml-input-horizontal -->
                         <div class="ml-button-horizontal primary">
                           <button type="submit" class="primary">Je m'inscris</button>
                           <button disabled="disabled" style="display:none;" type="button" class="loading">
                             <div class="ml-form-embedSubmitLoad"></div>
                             <span class="sr-only">Loading...</span>
                           </button>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <input type="hidden" name="ml-submit" value="1">
-                    <!--<div class="ml-mobileButton-horizontal">
-                      <button type="submit" class="primary">Rejoindre le Club</button>
-                      <button disabled="disabled" style="display:none;" type="button" class="loading">
-                        <div class="ml-form-embedSubmitLoad"></div>
-                        <span class="sr-only">Loading...</span>
-                      </button>
-                    </div>-->
+                        </div><!-- /ml-button-horizontal -->
+                      </div><!-- /ml-form-horizontalRow -->
+                    </div><!-- /ml-form-formContent -->
+                    <!-- ↓ permissions bien à l'intérieur du <form>, bien fermé -->
                     <div class="ml-form-embedPermissions">
                       <div class="ml-form-embedPermissionsContent horizontal privacy-policy">
                         <p style="text-align:left;"><em>Tu pourras te désinscrire à tout moment.</em></p>
                       </div>
+                    </div><!-- /ml-form-embedPermissions -->
+                    <input type="hidden" name="ml-submit" value="1">
                     <input type="hidden" name="anticsrf" value="true">
                   </form>
-                </div>
+                </div><!-- /row-form -->
+
                 <div class="ml-form-successBody row-success" style="display:none">
                   <div class="ml-form-successContent">
                     <h4>Merci ! 💌</h4>
                     <p>On se retrouve dans tes mails pour valider ton inscription.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                </div><!-- /row-success -->
+
+              </div><!-- /ml-form-embedWrapper -->
+            </div><!-- /ml-form-align-center -->
+          </div><!-- /mlb2-25212338 -->
         </div>
-      </div>
-    </div>
+
+      </div><!-- /newsletter-col -->
+    </div><!-- /section-inner -->
   </section>
 
   <!-- FOOTER -->
